@@ -4,7 +4,7 @@ import numpy as np
 from groq import Groq
 
 # --- CONFIGURATION ---
-GROQ_API_KEY = "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" # <--- PASTE KEY HERE
+GROQ_API_KEY = "YOUR_KEY" # <--- PASTE KEY HERE
 
 SENTINEL_FEATURES = [
     'Sudden jumps in sensor data', 'Battery drain spikes', 'Irregular sending patterns', 
@@ -144,4 +144,5 @@ class IoTIntelligenceCore:
                 "battery_prediction_hours": round(analyst_res["hours_remaining"], 1),
                 "battery_status": battery_status # <--- ADDED HERE
             }
+
         }
